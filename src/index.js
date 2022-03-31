@@ -1,12 +1,6 @@
-import "./styles.css";
+import "./index.scss";
 
-import { camelCase } from "lodash";
+import { render } from "react-dom";
+import App from "./components/App";
 
-import React from "react";
-import ReactDOM from "react-dom";
-
-function App() {
-  return <div>App Component</div>;
-}
-
-ReactDOM.render(<App />, document.getElementById("root"));
+render(<App />, document.getElementById("root"));
